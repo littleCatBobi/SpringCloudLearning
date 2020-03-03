@@ -1,0 +1,35 @@
+server:
+  port: 8001
+  
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
+  type-aliases-package: com.lingluo.springcloud.entities    # 所有Entity别名类所在包
+  mapper-locations: classpath:mybatis/mapper/*.xml                       # mapper映射文件
+    
+spring:
+  application:
+    name: lingluocloud-dept
+  datasource:
+    url: jdbc:mysql://localhost:3306/clouddb01?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true&verifyServerCertificate=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    #以下两个参数坑爹玩意，如果加上了就无法找到注册的实例
+    #registerWithEureka: false
+    #fetchRegistry: false
+    service-url:
+      #defaultZone: http://eureka7001.com:7001/eureka
+      # 将该service注册到集群eureka中
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: lingluocloud-dept8001-hystrix   # 在eureka中显示对应的服务名字
+    prefer-ip-address: true     #在eureka中下边的访问路径可以显示IP地址
+
+info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
+  app.name: lingluocloud
+  company.name: www.lingluo.com
+  build.artifactId: lingluocloud-provider-dept-hystrix-8001
+  build.version: 1.0-SNAPSHOT

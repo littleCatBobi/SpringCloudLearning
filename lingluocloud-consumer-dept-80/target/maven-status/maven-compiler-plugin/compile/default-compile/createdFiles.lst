@@ -1,0 +1,5 @@
+com\lingluo\myrule\MyRandomRule.class
+com\lingluo\springcloud\controller\DeptController_Consumer.class
+com\lingluo\springcloud\DeptConsumer80_App.class
+com\lingluo\myrule\MySelfRule.class
+com\lingluo\springcloud\cfgbeans\ConfigBean.class

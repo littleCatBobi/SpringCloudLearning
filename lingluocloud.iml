@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-api/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-consumer-dept-80/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-consumer-dept-feign/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7001/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7002/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7003/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8001/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8002/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8003/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-consumer-dept-80/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-consumer-dept-feign/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7001/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7002/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-eureka-7003/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8001/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8002/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/lingluocloud-provider-dept-8003/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lingluospringcloud" level="project" />
+  </component>
+</module>

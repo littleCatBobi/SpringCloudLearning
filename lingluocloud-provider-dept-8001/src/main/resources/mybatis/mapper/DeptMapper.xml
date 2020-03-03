@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lingluo.springcloud.dao.DeptDao">
+	<resultMap id="BaseResultMap" type="com.lingluo.springcloud.entities.DeptEntity">
+		<constructor>
+			<idArg column="dept_no" javaType="java.lang.Long" jdbcType="BIGINT" />
+			<arg column="dept_name" javaType="java.lang.String" jdbcType="VARCHAR" />
+			<arg column="db_source" javaType="java.lang.String" jdbcType="VARCHAR" />
+		</constructor>
+	</resultMap>
+	<select id="findById" resultMap="BaseResultMap" parameterType="Long">
+		SELECT * FROM  dept WHERE  dept_no = #{deptNo}
+	</select>
+
+	<select id="findAll" resultMap="BaseResultMap">
+		SELECT * FROM  dept;
+	</select>
+
+	<insert id="addDept">
+		INSERT INTO dept(dept_name,db_source) VALUE (#{deptName},DATABASE());
+	</insert>
+
+</mapper>

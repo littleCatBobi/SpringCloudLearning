@@ -1,0 +1,6 @@
+com\lingluo\springcloud\entities\DeptEntity.class
+com\lingluo\springcloud\service\DeptClientServiceFallbackFactory$1.class
+com\lingluo\springcloud\service\DefaultFallbackProvider.class
+com\lingluo\springcloud\service\DeptClientServiceFallbackFactory.class
+com\lingluo\springcloud\service\DefaultFallbackProvider$1.class
+com\lingluo\springcloud\service\DeptClientService.class

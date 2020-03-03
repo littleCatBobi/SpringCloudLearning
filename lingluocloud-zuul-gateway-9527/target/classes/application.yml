@@ -1,0 +1,31 @@
+server:
+  port: 9527
+
+zuul:
+  #公共前缀
+  prefix: /springcloud
+  #多个用"*" ignored-services: "*"
+  ignored-services: LINGLUOCLOUD-DEPT
+  routes:
+    mydept.serviceId: LINGLUOCLOUD-DEPT
+    mydept.path: /mydept/**
+
+spring:
+  application:
+    name: lingluocloud-zuul-gateway
+
+eureka:
+  instance:
+    instance-id: gateway-9527
+    prefer-ip-address: true
+  client:
+    service-url:
+      # 单机版配置defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka #设置与eureka server 交互的地址查询服务和注册服务都需要依赖的地址
+      #集群配置
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+
+info:
+  app.name: lingluocloud-zuul-gateway
+  company.name: www.lingluo.com
+  build.artifactId: lingluocloud-zuul-gateway-9527
+  build.version: 1.0-SNAPSHOT

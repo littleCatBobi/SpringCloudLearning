@@ -1,0 +1,5 @@
+com\lingluo\springcloud\DeptProvider8002_App.class
+com\lingluo\springcloud\dao\DeptDao.class
+com\lingluo\springcloud\service\DeptService.class
+com\lingluo\springcloud\service\Impl\DeptServiceImpl.class
+com\lingluo\springcloud\Controller\DeptController.class

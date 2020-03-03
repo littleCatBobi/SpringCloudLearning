@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lingluocloud-api" />
+        <module name="lingluocloud-provider-dept-hystrix-8001" />
+        <module name="lingluocloud-consumer-hystrix-dashboard" />
+        <module name="lingluocloud-config-3344" />
+        <module name="lingluocloud-provider-dept-8003" />
+        <module name="lingluocloud-provider-dept-8002" />
+        <module name="lingluocloud-provider-dept-8001" />
+        <module name="lingluocloud-config-dept-client-8001" />
+        <module name="lingluocloud-zuul-gateway-9527" />
+        <module name="lingluocloud-config-client-3355" />
+        <module name="lingluocloud-consumer-dept-feign" />
+        <module name="lingluocloud-config-eureka-client-7001" />
+        <module name="lingluocloud-eureka-7003" />
+        <module name="lingluocloud-eureka-7002" />
+        <module name="lingluocloud-eureka-7001" />
+        <module name="lingluocloud-consumer-dept-80" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lingluocloud" target="1.8" />
+      <module name="lingluocloud-api" target="1.8" />
+      <module name="lingluocloud-config-3344" target="1.8" />
+      <module name="lingluocloud-config-client-3355" target="1.8" />
+      <module name="lingluocloud-config-dept-client-8001" target="1.8" />
+      <module name="lingluocloud-config-eureka-client-7001" target="1.8" />
+      <module name="lingluocloud-consumer-dept-80" target="1.8" />
+      <module name="lingluocloud-consumer-dept-feign" target="1.8" />
+      <module name="lingluocloud-consumer-hystrix-dashboard" target="1.8" />
+      <module name="lingluocloud-eureka-7001" target="1.8" />
+      <module name="lingluocloud-eureka-7002" target="1.8" />
+      <module name="lingluocloud-eureka-7003" target="1.8" />
+      <module name="lingluocloud-provider-dept-8001" target="1.8" />
+      <module name="lingluocloud-provider-dept-8002" target="1.8" />
+      <module name="lingluocloud-provider-dept-8003" target="1.8" />
+      <module name="lingluocloud-provider-dept-hystrix-8001" target="1.8" />
+      <module name="lingluocloud-zuul-gateway-9527" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
